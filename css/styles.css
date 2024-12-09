@@ -144,16 +144,16 @@ header {
  .images-section li img {
    position: relative;
    top: auto;
-   bottom: 370px;
+   bottom: 280px;
    filter: brightness(40%);
  }
 
  .text-slide-section {
-   position: relative;
+   position: absolute;
    text-align: left;
-   top: 20%;
+   top: 13%;
    left: 30%;
-   z-index: 10;
+   z-index: 12;
    font-family: monospace;
    color: white;
  }
@@ -422,16 +422,18 @@ header {
 
  #experience-section {
    margin: auto;
+   justify-content: center;
    margin-bottom: 100px;
    font-family: monospace;
    display: flex;
+   top: 50%;
+   left: 50%;
    background-color: #f9f9f9;
  }
 
  .numbers-experience {
    display: grid;
    max-width: 300px;
-   margin-left: 300px;
    grid-template-columns: repeat(2, 1fr);
    gap: 40px;
    justify-items: center;
@@ -713,8 +715,8 @@ header {
 
 .infoDegradado{
   position: absolute;
-  max-width: 1400px;
-  transform: translate(-20%, -20%);
+  top: 0;
+  left: 0;
   z-index: 3;
   line-height: 30px;
   text-align: left;
@@ -744,7 +746,6 @@ header {
 
 .marquee {
   position: absolute;
-  max-width: 1650px;
   height: 300px;
   color: #eee;
   overflow: hidden;
@@ -762,8 +763,7 @@ header {
   background: linear-gradient(to right, #6c4623 0%, transparent 100%);
 }
 .marquee:after {
-  right: 0;
-  margin-right: 120px;
+  left: 51%;
   background: linear-gradient(to left, #6c4623 0%, transparent 100%);
 }
 .marquee-content {
@@ -845,13 +845,148 @@ header {
   color: #f19d4d;
 }
 
+#news-section {
+  margin: auto;
+  max-width: 1200px;
+  font-family: monospace;
+}
+
+.div-title-news {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
+#news-section hr {
+  border: 1px rgba(128, 128, 128, 0.35) solid;
+}
+
+.div-title-news a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+
+.div-title-news a:hover {
+  color: #f19d4d;
+}
+
+.div-news-info ul {
+  margin: auto;
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.div-news-info li {
+  max-width: 350px;
+  list-style-type: none;
+}
+
+.acordeon-disparador {
+  background-color: #333;
+  text-align: left;
+  color: white;
+  padding: 15px;
+  display: flex;
+  max-width: 350px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.figure-orange {
+  margin-top: 100px;
+  margin: auto;
+  background-color: #f19d4d;
+  box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.3);
+  height: 350px;
+  clip-path: ellipse(50% 55% at 50% 100%);
+}
+
+.title-a {
+  margin-bottom: 20px;
+}
+
+.btn-news {
+  margin-top: 30px;
+}
+
+.btn-news a {
+  text-decoration: none;
+  background-color: #d7d7d7;
+  color: black;
+  font-weight: bold;
+  padding: 10px 25px;
+  transition: all 0.2s linear;
+}
+
+.btn-news a:hover {
+  color: white;
+  background-color: #f19d4d;
+}
+
+.title-a a {
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+
+
+.title-a a:hover {
+  color: #f19d4d;
+}
+
+.acordeon-disparador figure {
+  margin-left: 75px;
+  cursor: pointer;
+}
+
+.acordeon-contenido img {
+  width: 310px;
+}
+
+
+
+.acordeon-contenido {
+  background-color: rgba(128, 128, 128, 0.545) solid;
+  border: 1px rgba(128, 128, 128, 0.858);
+  text-align: justify;
+  padding: 10px;
+  margin: 10px;
+  display: none;
+}
+
+.rotate-icon {
+  transform: rotate(0deg);
+  transition: all 0.3s linear;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.text-notices {
+  padding: 20px;
+}
+
+
 #location-section {
   margin: auto;
-  margin-top: 50px;
+  overflow: hidden;
+}
+
+#location-section iframe {
+  width: 100%;
 }
 
 footer {
-  background-color: #333;
+  background-color: #1e1e1e;
   color: white;
   display: flex;
   flex-direction: column;
@@ -861,7 +996,6 @@ footer {
 }
 
 footer article {
-  border: 1px red solid;
   margin: auto;
   max-width: 1200px;
   justify-content: center;
@@ -887,14 +1021,32 @@ footer span {
 }
 
 .text-flex{
+  margin-top: 10px;
   display: flex;
+  flex-direction: column;
   max-width: 320px;
+}
+
+.footer-text {
+  margin-bottom: 30px;
 }
 
 .footer-part1 {
   display: flex;
   flex-direction: row;
 }
+
+.footer-part2 {
+  max-width: 350px;
+  text-align: left;
+  padding: 20px;
+}
+
+.title-prt2 {
+  
+}
+
+
 
 
 
