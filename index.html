@@ -21,7 +21,7 @@
 <body>
 
   <article>
-    <a href="#header">
+    <a href="#bars">
       <figure class="btn-action-up">
         <i class="fa-solid fa-chevron-up"></i>
       </figure>
@@ -142,8 +142,8 @@
       <div class="indicators">
           <div class="indicator active"></div>
           <div class="indicator"></div>
-          <div class="indicator"></div>
-          <div class="indicator"></div>
+          <div class="indicator indi-tablet"></div>
+          <div class="indicator indi-tablet"></div>
       </div>
   </div>
 
@@ -679,8 +679,8 @@ $('.next-slide').on('click', function () {
 
     if (window.innerWidth >= 1200) {
       itemsToShow = 3;
-    } else {
-      itemsToShow = 1;
+    } else if (window.innerWidth >= 768) {
+      itemsToShow = 2;
     }
 
     var otslider = new OTSlider();
