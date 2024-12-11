@@ -21,12 +21,18 @@
 <body>
 
   <header>
-    <article>
+    <article class="title-header">
+      <figure id="bars">
+        <i class="fa-solid fa-bars"></i>
+      </figure>
       <figure class="logo-header">
         <img src="img/Crafter-Logo.webp" alt="Logo">
       </figure>
+      <figure id="vertical-figure">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </figure>
     </article>
-    <article class="icons-header">
+    <article id="icons-header">
       <div class="icons-one">
         <figure>
           <i class="fa-solid fa-trophy"></i>
@@ -35,7 +41,6 @@
           <p>Leading</p>
           <p>Supplier in Europe</p>
         </div>
-
       </div>
 
       <div class="icons-one">
@@ -79,7 +84,7 @@
             </div>
           </li>
           <li>
-            <img src="img/slide2.jpg" alt="">
+            <img class="image-slide" src="img/slide2.jpg" alt="">
             <div class="text-slide-section">
               <h2 class="wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="4.8s">Quality Materials</h2>
               <hr class="wow animate__animated animate__fadeInRight" data-wow-duration="0.8s" data-wow-delay="4.8s">
@@ -102,7 +107,39 @@
   </section>
 
   <section id="design-section">
-    <article>
+
+    <div class="carousel wow animate__animated animate__fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">
+      <div class="carousel-track">
+          <div class="carousel-slide">
+              <img src="img/img1.jpg" alt="Exterior Design 1">
+              <div class="caption">Exterior Design</div>
+          </div>
+          <div class="carousel-slide">
+              <img src="img/img2.jpg" alt="Exterior Design 2">
+              <div class="caption">Home Furniture</div>
+          </div>
+          <div class="carousel-slide">
+              <img src="img/img3.jpg" alt="Exterior Design 3">
+              <div class="caption">Office Furniture</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="img/img4.jpg" alt="Exterior Design 3">
+            <div class="caption">Kitchen Remodeling</div>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+          <button class="carousel-button prev">&#9664;</button>
+          <button class="carousel-button next">&#9654;</button>
+      </div>
+      <div class="indicators">
+          <div class="indicator active"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
+      </div>
+  </div>
+
+    <article class="desktop">
       <ul>
         <li>
           <div class="wow animate__animated animate__fadeInLeft" data-wow-duration="0.6s" data-wow-delay="0.4s">
@@ -195,7 +232,7 @@
                 <div class="close"></div>
               </button>
                 <h2>Video Presentation</h2>
-                <iframe width="780" height="480" src="https://www.youtube.com/embed/-AhmuMqZB0s" title="Intense - Multipurpose HTML Template #58888" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="auto" height="auto" src="https://www.youtube.com/embed/-AhmuMqZB0s" title="Intense - Multipurpose HTML Template #58888" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
           <div class="video-text">
@@ -217,55 +254,30 @@
         <figure>
           <img src="img/carousel1.jpg"/>
         </figure>
-        <div class="box-text">
-          <h3>Kitchen Cabinet</h3>
-          <p>As one of our recent projects, this cabinet was designed to fit the open space in the transitional kitchen.</p>
-          <a href="#">READ MORE</a>
-        </div>
       </div>
 
       <div class="carousel-box">
         <figure>
           <img src="img/carousel2.jpg"/>
         </figure>
-        <div class="box-text">
-          <h3>Kitchen Cabinet</h3>
-          <p>As one of our recent projects, this cabinet was designed to fit the open space in the transitional kitchen.</p>
-          <a href="#">READ MORE</a>
-        </div>
       </div>
 
       <div class="carousel-box">
         <figure>
           <img src="img/carousel4.jpg"/>
         </figure>
-        <div class="box-text">
-          <h3>Kitchen Cabinet</h3>
-          <p>As one of our recent projects, this cabinet was designed to fit the open space in the transitional kitchen.</p>
-          <a href="#">READ MORE</a>
-        </div>
       </div>
 
       <div class="carousel-box">
         <figure>
           <img src="img/carousel5.jpg"/>
         </figure>
-        <div class="box-text">
-          <h3>Kitchen Cabinet</h3>
-          <p>As one of our recent projects, this cabinet was designed to fit the open space in the transitional kitchen.</p>
-          <a href="#">READ MORE</a>
-        </div>
       </div>
 
       <div class="carousel-box">
         <figure>
           <img src="img/carousel6.jpg"/>
         </figure>
-        <div class="box-text">
-          <h3>Kitchen Cabinet</h3>
-          <p>As one of our recent projects, this cabinet was designed to fit the open space in the transitional kitchen.</p>
-          <a href="#">READ MORE</a>
-        </div>
       </div>
     </div>
   </section>
@@ -460,7 +472,7 @@
     </article>
     <article>
       <div class="footer-part1">
-        <div class="footer-part2">
+        <div class="footer-part2-left">
           <figure>
             <img src="img/logo-footer.webp" alt="">
            </figure>
@@ -469,13 +481,48 @@
         <div class="footer-part2">
           <div class="title-prt2">
             <h3>Subscribe Now</h3>
-            <p>The text field is required.</p>
-            <input type="text">
-            <a href="#">SEND</a>
+            <div class="form">
+              <form>
+
+                <label for="">Name<span class="required">*</span>:</label>
+                <br>
+                <input class="form-control" type="text" name="names" id="name" placeholder="Enter Your Name">
+                <br>
+
+                <label for="">E-mail<span class="required">*</span>:</label>
+                <br>
+                <input class="form-control" type="email" name="email" id="emails" placeholder="Enter Your E-mail">
+                <br>
+
+                <label for="">Number<span class="required">*</span>:</label></label>
+                <br>
+                <input class="form-control" type="number" name="numbers" placeholder="Enter Your Number">
+                <input class="btn-form-submit" id="btn_save" name="btn_save" type="submit" value="Enviar">
+              </form>
+
+            </div>
           </div>
         </div>
       </div>
+
     </article>
+    <div class="footer-part3">
+      <div class="text-part3">
+        <p>Crafter © 2024. <a href="#">Privacy Policy.</a></p>
+      </div>
+      <div class="icons-part3">
+        <p>Follow Us</p>
+        <figure>
+          <i class="fa-brands fa-twitter"></i>
+        </figure>
+        <figure>
+          <i class="fa-brands fa-facebook"></i>
+        </figure>
+        <figure>
+          <i class="fa-brands fa-instagram"></i>
+        </figure>
+      </div>
+    </div>
   </footer>
 
   <script>
@@ -485,8 +532,66 @@
 </body>
 
 <script>
+  $("#btn_save").click(function (){
+if ($("#name").val().trim()=='') {
+        alert("Escriba su nombre");
+        $("#name").focus();
+        return false;
+    }
+if ($("#emails").val().trim()=='') {
+        alert("Escriba su correo electrónico");
+        $("#emails").focus();
+        return false;
+    }
+ if ($("#comments").val().trim()=='') {
+        alert("Escriba sus comentarios");
+        $("#comments").focus();
+        return false;
+    }
+document.info_user.submit();
+});
+</script>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track.children);
+  const prevButton = document.querySelector('.carousel-button.prev');
+  const nextButton = document.querySelector('.carousel-button.next');
+  const indicators = document.querySelectorAll('.indicator');
+  let currentIndex = 0;
+
+  function updateSlide(position) {
+      track.style.transform = `translateX(-${position * 100}%)`;
+      indicators.forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === position);
+      });
+  }
+
+  nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlide(currentIndex);
+  });
+
+  prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlide(currentIndex);
+  });
+
+  indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+          currentIndex = index;
+          updateSlide(currentIndex);
+      });
+  });
+</script>
+
+<script>
   $("#bars").click(function(){
     $("#navegator").slideToggle();
+  });
+
+  $("#vertical-figure").click(function(){
+    $("#icons-header").slideToggle();
   });
 </script>
 
@@ -518,23 +623,43 @@ $('.next-slide').on('click', function () {
 </script>
 
 <script>
-  var otslider = new OTSlider();
-  otslider.init({
-  transition : 'slide',
-  transitionTiming: "ease",
-  transitionDuration : 500,
-  duration: 2400,
-  autoPlay : true,
-  pauseOnHover : true,
-  itemsToShow : 3,
-  direction: 'rtl',
-  itemsScrollBy : 1,
-  padding : 0,
-  teasing : 0,
-  swipeFreely : false,
-  centered : false,
-});
+  function initSlider() {
+    var itemsToShow;
+
+    if (window.innerWidth >= 1200) {
+      itemsToShow = 3;
+    } else {
+      itemsToShow = 1;
+    }
+
+    var otslider = new OTSlider();
+    otslider.init({
+      transition: 'slide',
+      transitionTiming: "ease",
+      transitionDuration: 500,
+      duration: 2400,
+      autoPlay: true,
+      pauseOnHover: true,
+      itemsToShow: itemsToShow,
+      direction: 'rtl',
+      itemsScrollBy: 1,
+      padding: 0,
+      teasing: 0,
+      swipeFreely: false,
+      centered: false,
+    });
+  }
+
+
+  initSlider();
+
+  window.addEventListener('resize', function () {
+    initSlider();
+  });
 </script>
+
+
+
 
 <script>
 $(".acordeon-titulo").click(function(){

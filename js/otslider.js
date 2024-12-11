@@ -36,7 +36,7 @@ function OTSlider() {
 		canTransform : false,
 		itemStartPosition : [],
 		itemEndPosition : [],
-		
+
 		configs: {
 			element : 'ot-slider',
 			direction: 'ltr',
@@ -61,7 +61,7 @@ function OTSlider() {
 			numericNav : true,
 			centered : false,
 		},
-		
+
 		init : function(configs){
 
 			if(sliderInstID > 0)
